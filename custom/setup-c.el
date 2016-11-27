@@ -6,6 +6,16 @@
 ;; hs-minor-mode for folding source code
 (add-hook 'c-mode-common-hook 'hs-minor-mode)
 
+;; Debian-8.5 VM c++ headers
+(add-to-list 'company-c-headers-path-system "/usr/include/c++/4.9")
+(add-to-list 'company-c-headers-path-system "/usr/include/x86_64-linux-gnu/c++/4.9")
+(add-to-list 'company-c-headers-path-system "/usr/include/c++/4.9/backward")
+(add-to-list 'company-c-headers-path-system "/usr/lib/gcc/x86_64-linux-gnu/4.9/include")
+(add-to-list 'company-c-headers-path-system "/usr/local/include")
+(add-to-list 'company-c-headers-path-system "/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed")
+(add-to-list 'company-c-headers-path-system "/usr/include/x86_64-linux-gnu")
+(add-to-list 'company-c-headers-path-system "/usr/include")
+
 ;; Available C style:
 ;; “gnu”: The default style for GNU projects
 ;; “k&r”: What Kernighan and Ritchie, the authors of C used in their book
