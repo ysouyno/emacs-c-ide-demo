@@ -57,3 +57,11 @@
 ;; apt-get install emacs-goodies-el
 (require 'color-theme)
 (eval-after-load "color-theme" '(progn (color-theme-initialize) (color-theme-hober)))
+
+;; yasnippet
+(require 'yasnippet)
+(yas-global-mode 1)
+
+;; line number on left
+(global-linum-mode t)
+(put 'upcase-region 'disabled nil)
